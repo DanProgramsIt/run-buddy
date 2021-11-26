@@ -80,10 +80,11 @@ section {
 /* Hero Style Start */
 .hero {
   background-image: url('../images/hero-bg-jpg.jpg');
-  height: 600px;
   background-size: cover;
   background-position: center;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 /* Hero Style End */
 
@@ -106,12 +107,10 @@ section {
   border: 3px solid #024e76;
   background-color: #fce138;
   padding: 20px;
-  width: 40%;
   margin: 3.5%;
   color: #024e76;
-  position: absolute;
-  bottom: 120px;
-  right: 140px;
+  width: 40%;
+  margin: 3.5%;
 }
 
 .hero-form h3 {
@@ -171,6 +170,7 @@ section {
 .step h3 {
   color: #024e76;
   font-size: 46px;
+  flex: 1 30%;
 }
 
 .step-text h4 {
@@ -183,6 +183,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  flex: 2 70%;
 }
 
 .step-text {
@@ -247,7 +248,6 @@ section {
 
 .trainer-bio h3 {
   font-size: 28px;
-  margin-bottom: 8px;
 }
 
 .trainer-bio h4 {
@@ -281,17 +281,22 @@ section {
   color: #fce138;
 }
 
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
 .contact-info iframe {
-  width: 400px;
   height: 400px;
 }
 
 .contact-info div {
-  width: 410px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  margin: 30px 0 0 60px;
   color: white;
 }
 
@@ -304,8 +309,29 @@ section {
 .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 85%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.contact-form button {
+  width: 85%;
+  border: none;
+  background: #fce138;
+  color: #024e76;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
 }
 
 .contact-info a {
