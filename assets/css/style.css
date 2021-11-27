@@ -44,7 +44,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
@@ -79,6 +79,7 @@ section {
 
 /* Hero Style Start */
 .hero {
+  align-items: flex-start;
   background-image: url('../images/hero-bg-jpg.jpg');
   background-size: cover;
   background-position: center;
@@ -89,6 +90,7 @@ section {
 /* Hero Style End */
 
 .hero-cta {
+  line-height: 1.2;
   width: 35%;
   text-align: right;
   margin: 3.5%;
@@ -209,7 +211,7 @@ section {
   text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
-  font-size: 55px;
+  font-size: 48px;
   color: #024e76;
   border-bottom: 3px solid;
 }
@@ -336,6 +338,21 @@ section {
 
 .contact-info a {
   color: #fce138;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
 }
 
 /* REACH OUT STYLES END */
